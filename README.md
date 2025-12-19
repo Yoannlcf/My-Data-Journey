@@ -1,4 +1,4 @@
-# My-Data-Journey
+# My-Data-Journey 🚀
 
 Bienvenue sur mon portfolio technique ! 👋
 
@@ -8,29 +8,38 @@ Ce dépôt centralise mes projets d'apprentissage, mes POCs (Proof of Concepts) 
 
 ## 🎯 Objectifs & Stack Technique
 
-Mon focus se porte sur la "Modern Data Stack" :
+Mon focus se porte sur la "Modern Data Stack" et l'écosystème Cloud :
 
 | Domaine | Technologies & Outils |
 | :--- | :--- |
 | **Langages** | 🐍 Python, 🗃️ SQL |
-| **Cloud** | ☁️ Microsoft Azure (Data Factory, Synapse, ADLS Gen2) |
-| **Processing** | ⚡ Apache Spark, 🧱 Databricks |
-| **Orchestration** | 🔄 Apache Airflow |
-| **Qualité & CI/CD** | 🏗️ dbt, Git, GitHub Actions |
+| **Cloud** | ☁️ Microsoft Azure (Data Lake Gen2, Storage Account) |
+| **Processing** | ⚡ Apache Spark, 🧱 Databricks (À venir) |
+| **Sécurité** | 🔐 Gestion des secrets (.env), IAM |
+| **Qualité & CI/CD** | 🏗️ Git, GitHub Actions |
 
-## 📂 Projets (En cours)
+## 📂 Projets Réalisés
 
-### 1. Crypto Ingestion Pipeline (Projet Starter)
-*Un pipeline ETL automatisé pour récupérer, nettoyer et stocker des données financières.*
-- **Stack :** Python, API REST, SQL.
-- **Statut :** 🚧 En développement
-- **Lien :** [Voir le code](./crypto_ingestion)
+### 1. Crypto Ingestion Pipeline (ETL Hybride)
+*Pipeline d'ingestion de données financières simulées vers le Cloud Azure.*
 
-*(Tu ajouteras tes futurs projets ici : Data Lake, Spark Streaming, etc.)*
+Ce projet démontre la mise en place d'une architecture ETL sécurisée connectant un script Python local à un Data Lake d'entreprise.
+
+- **Architecture :** Python (Local) ➔ Transformation (Pandas) ➔ Azure Data Lake Gen2.
+- **Compétences clés :**
+    - **Extract :** Simulation de données API (Mocking) pour pallier les restrictions réseau.
+    - **Load :** Connexion au SDK Azure Blob Storage.
+    - **Sécurité :** Gestion des clés d'accès via variables d'environnement (`python-dotenv`) pour ne jamais exposer de secrets sur GitHub.
+- **Stack :** Python, Pandas, Azure Storage Blob, SQLite.
+- **Statut :** ✅ V1 Terminée
+- **Lien :** [Voir le code source](./crypto_ingestion)
+- **Documentation :** [📘 Lire la Documentation Technique (PDF)](./crypto_ingestion/docs/Documentation_Pipeline_d_Ingestion_Crypto_vers_Azure_Data_Lake.pdf)
+
+*(Prochain projet : Visualisation Power BI ou Transformation avec Databricks)*
 
 ## 🏆 Certifications Visées
 
-- [ ] **Microsoft Azure Data Fundamentals (DP-900)** *(En préparation)*
+- [ ] **Microsoft Azure Data Fundamentals (DP-900)** *(En cours de préparation)*
 - [ ] **Databricks Lakehouse Fundamentals**
 - [ ] **Databricks Data Engineer Associate**
 - [ ] **Azure Data Engineer Associate (DP-203)**
