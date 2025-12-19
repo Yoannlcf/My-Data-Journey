@@ -33,7 +33,7 @@ Ce projet démontre la mise en place d'une architecture ETL sécurisée connecta
 - **Stack :** Python, Pandas, Azure Storage Blob, SQLite.
 - **Statut :** ✅ V1 Terminée
 - **Lien :** [Voir le code source](./crypto_ingestion)
-- **Documentation :** [📘 Lire la Documentation Technique (PDF)](./crypto_ingestion/docs/documentation.pdf)
+- **Documentation :** [📘 Lire la Documentation Technique (PDF)](./crypto_ingestion/docs/Documentation_Pipeline_d_Ingestion_Crypto_vers_Azure_Data_Lake.pdf)
 
 *(Prochain projet : Visualisation Power BI ou Transformation avec Databricks)*
 
