@@ -13,29 +13,36 @@ Mon focus se porte sur la "Modern Data Stack" et l'écosystème Cloud :
 | Domaine | Technologies & Outils |
 | :--- | :--- |
 | **Langages** | 🐍 Python, 🗃️ SQL |
+| **Processing** | 🐼 Pandas, 🏹 PyArrow, ⚡ Spark (À venir) |
+| **Formats** | 📄 CSV (Bronze), 📦 Parquet (Silver/Gold) |
 | **Cloud** | ☁️ Microsoft Azure (Data Lake Gen2, Storage Account) |
-| **Processing** | ⚡ Apache Spark, 🧱 Databricks (À venir) |
-| **Sécurité** | 🔐 Gestion des secrets (.env), IAM |
-| **Qualité & CI/CD** | 🏗️ Git, GitHub Actions |
+| **Architecture** | 🏅 Medallion Architecture (Bronze/Silver/Gold) |
+| **Qualité & CI/CD** | 🔐 Dotenv (Sécurité), 🏗️ Git |
 
 ## 📂 Projets Réalisés
 
-### 1. Crypto Ingestion Pipeline (ETL Hybride)
-*Pipeline d'ingestion de données financières simulées vers le Cloud Azure.*
+### 1. Crypto Data Pipeline (Architecture Medallion)
+*Pipeline ETL complet : De l'ingestion brute à l'agrégation de KPIs.*
 
-Ce projet démontre la mise en place d'une architecture ETL sécurisée connectant un script Python local à un Data Lake d'entreprise.
+Ce projet implémente une **Architecture Medallion** (standard Databricks) pour traiter des données financières simulées. Il démontre la capacité à transformer des données brutes en insights métier via un pipeline automatisé.
 
-- **Architecture :** Python (Local) ➔ Transformation (Pandas) ➔ Azure Data Lake Gen2.
+- **Architecture :**
+  - **🥉 Couche Bronze (Raw) :** Ingestion de données brutes au format CSV.
+  - **🥈 Couche Silver (Cleansed) :** Nettoyage, typage strict et conversion en format **Parquet** (optimisation du stockage et performance de lecture).
+  - **🥇 Couche Gold (Aggregated) :** Calcul de KPIs (Moyennes, Totaux) pour usage Business/BI.
+  - **🤖 Orchestration :** Script Python maitre pilotant l'exécution séquentielle des tâches ETL.
+
 - **Compétences clés :**
-    - **Extract :** Simulation de données API (Mocking) pour pallier les restrictions réseau.
-    - **Load :** Connexion au SDK Azure Blob Storage.
-    - **Sécurité :** Gestion des clés d'accès via variables d'environnement (`python-dotenv`) pour ne jamais exposer de secrets sur GitHub.
-- **Stack :** Python, Pandas, Azure Storage Blob, SQLite.
-- **Statut :** ✅ V1 Terminée
+    - **Data Transformation :** Manipulation avancée avec Pandas (Nettoyage, Cast, GroupBy).
+    - **Storage Optimization :** Passage du CSV (Row-based) au Parquet (Columnar) pour simuler les bonnes pratiques Big Data.
+    - **Sécurité :** Gestion des clés d'accès via variables d'environnement (`.env`).
+    
+- **Stack :** Python, Pandas, PyArrow, Azure Storage Blob.
+- **Statut :** ✅ V1 (Local Pipeline) Terminée
 - **Lien :** [Voir le code source](./crypto_ingestion)
 - **Documentation :** [📘 Lire la Documentation Technique (PDF)](./crypto_ingestion/docs/Documentation_Pipeline_d_Ingestion_Crypto_vers_Azure_Data_Lake.pdf)
 
-*(Prochain projet : Visualisation Power BI ou Transformation avec Databricks)*
+*(Prochaines étapes : Migration vers Azure Data Factory & Visualisation Power BI)*
 
 ## 🏆 Certifications Visées
 
