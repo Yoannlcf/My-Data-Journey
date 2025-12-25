@@ -1,37 +1,48 @@
 import os
 import time
 
-# Mon "Azure Data Factory" local
-# Il orchestre l'exécution des scripts dans le bon ordre
+# --- CONFIGURATION ---
+# Liste des scripts à exécuter dans l'ordre
+# 1. (Optionnel) main.py si tu veux régénérer la donnée à chaque fois
+# 2. Upload vers Azure (Ingestion Cloud)
+# 3. Transformations locales (Pour l'instant)
+steps = [
+    "upload_to_azure.py",    # ☁️ Ingestion vers le Cloud
+    "bronze_to_silver.py",   # 🧹 Nettoyage (Local)
+    "silver_to_gold.py"      # 📊 Agrégation (Local)
+]
 
 def run_step(script_name):
-    print(f"Démarrage de : {script_name}...")
+    print(f"🚀 Démarrage de : {script_name}...")
     start_time = time.time()
     
-    # os.system exécute une commande terminal comme si tu le faisais toi-même
+    # Exécution de la commande
     exit_code = os.system(f"python {script_name}")
     
     end_time = time.time()
     duration = round(end_time - start_time, 2)
     
     if exit_code == 0:
-        print(f" {script_name} terminé avec succès en {duration} secondes.\n")
+        print(f"✅ {script_name} terminé avec succès en {duration} secondes.\n")
         return True
     else:
-        print(f" ERREUR CRITIQUE sur {script_name}. Arrêt du pipeline.")
+        print(f"❌ ERREUR CRITIQUE sur {script_name}. Arrêt du pipeline.")
         return False
 
 # --- DÉBUT DU PIPELINE ---
 print("==============================================")
-print(" DÉMARRAGE DU PIPELINE ETL CRYPTO")
+print("🤖 PIPELINE HYBRIDE (LOCAL + AZURE)")
 print("==============================================\n")
 
-# Étape 1 : Bronze -> Silver
-if run_step("bronze_to_silver.py"):
-    
-    # Étape 2 : Silver -> Gold (ne se lance que si l'étape 1 a réussi)
-    run_step("silver_to_gold.py")
+all_success = True
+for script in steps:
+    if not run_step(script):
+        all_success = False
+        break
 
 print("==============================================")
-print(" FIN DU PIPELINE")
+if all_success:
+    print("🏁 FIN DU PIPELINE : Succès complet !")
+else:
+    print("💀 FIN DU PIPELINE : Échec.")
 print("==============================================")
