@@ -40,16 +40,16 @@ Ce projet implémente une **Architecture Medallion** pour traiter des données f
 ### 2. Exploration Big Data avec Azure Synapse Analytics
 *Analyse de données à grande échelle via SQL Serverless et Spark.*
 
-[cite_start]Ce projet démontre l'utilisation d'une plateforme d'analyse intégrée pour ingérer et analyser des données provenant de diverses sources[cite: 8].
+Ce projet démontre l'utilisation d'une plateforme d'analyse intégrée pour ingérer et analyser des données provenant de diverses sources[cite: 8].
 
 - **Réalisations :**
-  - [cite_start]**Ingestion de données :** Mise en place de pipelines pour transférer des données depuis des sources HTTP vers un **Azure Data Lake Storage Gen2**[cite: 5, 74, 98].
-  - [cite_start]**Analyse SQL Serverless :** Utilisation du **SQL Pool (Built-in)** pour exécuter des requêtes à la demande sur des fichiers CSV via la fonction `OPENROWSET`[cite: 4, 175, 185].
-  - [cite_start]**Traitement Spark (Python) :** Configuration d'un **Spark Pool** pour effectuer des tâches de traitement distribué et d'agrégation via des **Notebooks PySpark**[cite: 2, 263, 272, 299].
-  - [cite_start]**Visualisation :** Génération de graphiques analytiques directement dans **Synapse Studio**[cite: 227, 308].
+  - **Ingestion de données :** Mise en place de pipelines pour transférer des données depuis des sources HTTP vers un **Azure Data Lake Storage Gen2**[cite: 5, 74, 98].
+  - **Analyse SQL Serverless :** Utilisation du **SQL Pool (Built-in)** pour exécuter des requêtes à la demande sur des fichiers CSV via la fonction `OPENROWSET`[cite: 4, 175, 185].
+  - **Traitement Spark (Python) :** Configuration d'un **Spark Pool** pour effectuer des tâches de traitement distribué et d'agrégation via des **Notebooks PySpark**[cite: 2, 263, 272, 299].
+  - **Visualisation :** Génération de graphiques analytiques directement dans **Synapse Studio**[cite: 227, 308].
 
 - **Stack :** Azure Synapse Analytics, T-SQL, PySpark, Azure Data Lake Gen2.
-- [cite_start]**Statut :** ✅ Projet terminé[cite: 131].
+- **Statut :** ✅ Projet terminé[cite: 131].
 - **Lien :** [Voir le code source](./Azure-Synapse-Analysis)
 
 ## 🏆 Certifications Visées
