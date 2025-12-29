@@ -40,7 +40,7 @@ Ce projet implémente une **Architecture Medallion** pour traiter des données f
 ### 2. Exploration Big Data avec Azure Synapse Analytics
 *Analyse de données à grande échelle via SQL Serverless et Spark.*
 
-Ce projet démontre l'utilisation d'une plateforme d'analyse intégrée pour ingérer et analyser des données provenant de diverses sources[cite: 8].
+Ce projet démontre l'utilisation d'une plateforme d'analyse intégrée pour ingérer et analyser des données provenant de diverses sources.
 
 - **Réalisations :**
   - **Ingestion de données :** Mise en place de pipelines pour transférer des données depuis des sources HTTP vers un **Azure Data Lake Storage Gen2**.
