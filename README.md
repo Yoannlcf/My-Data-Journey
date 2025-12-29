@@ -13,9 +13,9 @@ Mon focus se porte sur la "Modern Data Stack" et l'écosystème Cloud :
 | Domaine | Technologies & Outils |
 | :--- | :--- |
 | **Langages** | 🐍 Python, 🗃️ SQL |
-| **Processing** | 🐼 Pandas, 🏹 PyArrow, ⚡ Spark (À venir) |
+| **Processing** | 🐼 Pandas, 🏹 PyArrow, ⚡ Apache Spark (PySpark) |
 | **Formats** | 📄 CSV (Bronze), 📦 Parquet (Silver/Gold) |
-| **Cloud** | ☁️ Microsoft Azure (Data Lake Gen2, Storage Account) |
+| **Cloud** | ☁️ Microsoft Azure (Data Lake Gen2, Synapse Analytics, Storage Account) |
 | **Architecture** | 🏅 Medallion Architecture (Bronze/Silver/Gold) |
 | **Qualité & CI/CD** | 🔐 Dotenv (Sécurité), 🏗️ Git |
 
@@ -24,25 +24,33 @@ Mon focus se porte sur la "Modern Data Stack" et l'écosystème Cloud :
 ### 1. Crypto Data Pipeline (Architecture Medallion)
 *Pipeline ETL complet : De l'ingestion brute à l'agrégation de KPIs.*
 
-Ce projet implémente une **Architecture Medallion** (standard Databricks) pour traiter des données financières simulées. Il démontre la capacité à transformer des données brutes en insights métier via un pipeline automatisé.
+Ce projet implémente une **Architecture Medallion** pour traiter des données financières. Il démontre la capacité à transformer des données brutes en insights métier via un pipeline automatisé.
 
 - **Architecture :**
   - **🥉 Couche Bronze (Raw) :** Ingestion de données brutes au format CSV.
-  - **🥈 Couche Silver (Cleansed) :** Nettoyage, typage strict et conversion en format **Parquet** (optimisation du stockage et performance de lecture).
+  - **🥈 Couche Silver (Cleansed) :** Nettoyage, typage strict et conversion en format **Parquet**.
   - **🥇 Couche Gold (Aggregated) :** Calcul de KPIs (Moyennes, Totaux) pour usage Business/BI.
-  - **🤖 Orchestration :** Script Python maitre pilotant l'exécution séquentielle des tâches ETL.
+  - **🤖 Orchestration :** Script Python maître pilotant l'exécution séquentielle des tâches ETL.
 
-- **Compétences clés :**
-    - **Data Transformation :** Manipulation avancée avec Pandas (Nettoyage, Cast, GroupBy).
-    - **Storage Optimization :** Passage du CSV (Row-based) au Parquet (Columnar) pour simuler les bonnes pratiques Big Data.
-    - **Sécurité :** Gestion des clés d'accès via variables d'environnement (`.env`).
-    
 - **Stack :** Python, Pandas, PyArrow, Azure Storage Blob.
-- **Statut :** ✅ V1 (Local Pipeline) Terminée
 - **Lien :** [Voir le code source](./crypto_ingestion)
-- **Documentation :** [📘 Lire la Documentation Technique (PDF)](./crypto_ingestion/docs/Documentation_Pipeline_d_Ingestion_Crypto_vers_Azure_Data_Lake.pdf)
 
-*(Prochaines étapes : Migration vers Azure Data Factory & Visualisation Power BI)*
+(Prochaines étapes : Migration vers Azure Data Factory & Visualisation Power BI)
+
+### 2. Exploration Big Data avec Azure Synapse Analytics
+*Analyse de données à grande échelle via SQL Serverless et Spark.*
+
+[cite_start]Ce projet démontre l'utilisation d'une plateforme d'analyse intégrée pour ingérer et analyser des données provenant de diverses sources[cite: 8].
+
+- **Réalisations :**
+  - [cite_start]**Ingestion de données :** Mise en place de pipelines pour transférer des données depuis des sources HTTP vers un **Azure Data Lake Storage Gen2**[cite: 5, 74, 98].
+  - [cite_start]**Analyse SQL Serverless :** Utilisation du **SQL Pool (Built-in)** pour exécuter des requêtes à la demande sur des fichiers CSV via la fonction `OPENROWSET`[cite: 4, 175, 185].
+  - [cite_start]**Traitement Spark (Python) :** Configuration d'un **Spark Pool** pour effectuer des tâches de traitement distribué et d'agrégation via des **Notebooks PySpark**[cite: 2, 263, 272, 299].
+  - [cite_start]**Visualisation :** Génération de graphiques analytiques directement dans **Synapse Studio**[cite: 227, 308].
+
+- **Stack :** Azure Synapse Analytics, T-SQL, PySpark, Azure Data Lake Gen2.
+- [cite_start]**Statut :** ✅ Projet terminé[cite: 131].
+- **Lien :** [Voir le code source](./Azure-Synapse-Analysis)
 
 ## 🏆 Certifications Visées
 
