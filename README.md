@@ -44,12 +44,12 @@ Ce projet démontre l'utilisation d'une plateforme d'analyse intégrée pour ing
 
 - **Réalisations :**
   - **Ingestion de données :** Mise en place de pipelines pour transférer des données depuis des sources HTTP vers un **Azure Data Lake Storage Gen2**.
-  - **Analyse SQL Serverless :** Utilisation du **SQL Pool (Built-in)** pour exécuter des requêtes à la demande sur des fichiers CSV via la fonction `OPENROWSET`[cite: 4, 175, 185].
+  - **Analyse SQL Serverless :** Utilisation du **SQL Pool (Built-in)** pour exécuter des requêtes à la demande sur des fichiers CSV via la fonction `OPENROWSET`.
   - **Traitement Spark (Python) :** Configuration d'un **Spark Pool** pour effectuer des tâches de traitement distribué et d'agrégation via des **Notebooks PySpark**.
   - **Visualisation :** Génération de graphiques analytiques directement dans **Synapse Studio**.
 
 - **Stack :** Azure Synapse Analytics, T-SQL, PySpark, Azure Data Lake Gen2.
-- **Statut :** ✅ Projet terminé[cite: 131].
+- **Statut :** ✅ Projet terminé.
 - **Lien :** [Voir le code source](./Azure-Synapse-Analysis)
 
 ## 🏆 Certifications Visées
