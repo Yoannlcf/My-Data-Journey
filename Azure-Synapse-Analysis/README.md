@@ -1,23 +1,30 @@
 # Analyse de données avec Azure Synapse Analytics
 
-Ce projet fait partie de mon parcours **My-Data-Journey**. [cite_start]J'y démontre la mise en place d'un environnement d'analyse moderne (Data Warehouse) capable d'ingérer et de traiter des données à grande échelle[cite: 1, 8].
+Ce projet fait partie de mon parcours **My-Data-Journey**. J'y démontre la mise en place d'une infrastructure d'analyse de données moderne capable d'ingérer et d'analyser des données massives (Big Data) sur le cloud Microsoft Azure.
 
-## 🛠️ Technologies utilisées
-* [cite_start]**Azure Synapse Analytics Workspace** : Pour la gestion intégrée de l'analyse[cite: 3, 14].
-* [cite_start]**Azure Data Lake Storage Gen2** : Stockage hiérarchique optimisé pour le Big Data[cite: 33, 38].
-* [cite_start]**SQL Pool (Built-in)** : Moteur de requêtes SQL à la demande (Serverless)[cite: 4, 191].
-* [cite_start]**Apache Spark Pool** : Moteur de traitement distribué pour Python/PySpark[cite: 2, 267].
+## 🛠️ Technologies & Services Azure
+* **Azure Synapse Analytics Workspace** : Plateforme d'analyse unifiée pour la gestion des données.
+* **Azure Data Lake Storage Gen2** : Système de stockage hiérarchique compatible HDFS pour les charges de travail analytiques.
+* **Built-in SQL Pool** : Moteur de requêtes SQL Serverless pour l'exploration de données à la demande.
+* **Apache Spark Pool** : Moteur de traitement distribué optimisé pour le calcul en mémoire et le Machine Learning.
 
-## 📈 Réalisations techniques
-1. **Ingestion de données (Data Ingestion)** : 
-   - [cite_start]Création d'un pipeline de copie pour transférer des données produits depuis une source HTTP externe vers le Data Lake[cite: 5, 70, 71, 74].
-2. **Analyse Exploratoire avec SQL** : 
-   - [cite_start]Utilisation de la fonction `OPENROWSET` pour interroger des fichiers CSV directement dans le Data Lake sans importation préalable[cite: 177, 185].
-   - [cite_start]Agrégation des données pour compter les produits par catégorie[cite: 211, 218].
-3. **Analyse Big Data avec Spark** : 
-   - [cite_start]Chargement des données dans des DataFrames via des **Notebooks PySpark**[cite: 262, 271, 272].
-   - [cite_start]Transformation et visualisation des résultats sous forme de graphiques[cite: 280, 308].
+## 📈 Réalisations Techniques
 
-## 📂 Structure du projet
-* `Count Products by Category.sql` : Script SQL utilisé pour l'analyse à la demande.
-* `Notebook 1.ipynb` : Notebook Python contenant les transformations Spark.
+### 1. Ingestion de Données (Data Ingestion)
+- Configuration d'un pipeline de copie (Copy Data Tool) pour transférer des données produits depuis une source HTTP externe vers le Data Lake.
+- Mise en place d'une connexion sécurisée via Integration Runtime.
+
+### 2. Analyse Exploratoire avec SQL (Serverless)
+- Utilisation de la fonction `OPENROWSET` pour interroger des fichiers CSV directement dans le stockage, sans importation préalable en base de données.
+- Création de requêtes d'agrégation pour résumer les inventaires de produits par catégorie.
+- Visualisation immédiate des tendances via l'outil de graphiques intégré à Synapse Studio.
+
+### 3. Analyse de Données avec Spark & Python
+- Création d'un pool Spark avec mise à l'échelle automatique (Autoscale).
+- Utilisation de **Notebooks PySpark** pour charger des données dans des DataFrames.
+- Manipulation et nettoyage des données en Python pour extraire des statistiques clés.
+
+## 📂 Structure des fichiers
+* `Azure-Synapse-Analysis/`
+    * `Count Products by Category.sql` : Script SQL pour l'analyse à la demande.
+    * `Notebook 1.ipynb` : Notebook Python (Spark) pour le traitement des données.
