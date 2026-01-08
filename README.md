@@ -54,7 +54,7 @@ Ce projet démontre l'utilisation d'une plateforme d'analyse intégrée pour ing
 
 ## 🏆 Certifications Visées
 
-- [ ] **Microsoft Azure Data Fundamentals (DP-900)** *(En cours de préparation)*
+- [X] **Microsoft Azure Data Fundamentals (DP-900)** *(En cours de préparation)*
 - [ ] **Databricks Lakehouse Fundamentals**
 - [ ] **Databricks Data Engineer Associate**
 - [ ] **Azure Data Engineer Associate (DP-203)**
