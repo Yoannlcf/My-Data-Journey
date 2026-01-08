@@ -52,12 +52,14 @@ Ce projet démontre l'utilisation d'une plateforme d'analyse intégrée pour ing
 - **Statut :** ✅ Projet terminé.
 - **Lien :** [Voir le code source](./Azure-Synapse-Analysis)
 
-## 🏆 Certifications Visées
+## 🏆 Certifications
 
-- [X] **Microsoft Azure Data Fundamentals (DP-900)** *(En cours de préparation)*
-- [ ] **Databricks Lakehouse Fundamentals**
-- [ ] **Databricks Data Engineer Associate**
-- [ ] **Azure Data Engineer Associate (DP-203)**
+| Certification | Statut | Date |
+| :--- | :--- | :--- |
+| **Microsoft Certified: Azure Data Fundamentals (DP-900)** | ✅ Obtenue | 8 Janvier 2026 |
+| **Databricks Lakehouse Fundamentals** | 🎯 Cible | - |
+| **Databricks Data Engineer Associate** | 🎯 Cible | - |
+| **Azure Data Engineer Associate (DP-203)** | 🎯 Cible | - |
 
 ---
 *Ce portfolio est maintenu par Yoann LEHONG CHEFFSON. N'hésitez pas à explorer le code pour voir ma logique d'ingénierie !*
