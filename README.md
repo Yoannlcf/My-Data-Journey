@@ -57,7 +57,6 @@ Ce projet démontre l'utilisation d'une plateforme d'analyse intégrée pour ing
 | Certification | Statut | Date |
 | :--- | :--- | :--- |
 | **Microsoft Certified: Azure Data Fundamentals (DP-900)** | ✅ Obtenue | 8 Janvier 2026 |
-| **IBM Data Engineering Professional Certificate** | 🎯 Cible | - |
 | **Azure Data Engineer Associate (DP-203)** | 🎯 Cible | - |
 
 ---
