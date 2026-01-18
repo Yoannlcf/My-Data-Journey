@@ -34,7 +34,7 @@ Ce projet démontre la mise en place d'un pipeline ETL complet pour centraliser 
   - **Infrastructure :** Conteneurisation de la solution avec **Docker** et optimisation de l'environnement réseau **WSL2**.
 
 - **Stack :** Python, Pandas, SQLite, Docker, Metabase, Notion API.
-- **Lien :** ### [Notion Learning Tracker (ETL Pipeline)](https://github.com/Yoannlcf/learning-tracker-etl)
+- **Lien :** [Notion Learning Tracker (ETL Pipeline)](https://github.com/Yoannlcf/learning-tracker-etl)
 
 
 
