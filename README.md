@@ -32,11 +32,8 @@ Ce projet démontre la mise en place d'un pipeline ETL complet pour centraliser 
   - **Stockage :** Persistance des données transformées dans une base **SQLite** structurée.
   - **Visualisation :** Déploiement d'un service de Business Intelligence via **Metabase**.
   - **Infrastructure :** Conteneurisation de la solution avec **Docker** et optimisation de l'environnement réseau **WSL2**.
-
 - **Stack :** Python, Pandas, SQLite, Docker, Metabase, Notion API.
 - **Lien :** [Notion Learning Tracker (ETL Pipeline)](https://github.com/Yoannlcf/learning-tracker-etl)
-
-
 
 ### 2. Crypto Data Pipeline (Architecture Medallion)
 *Pipeline ETL complet : De l'ingestion brute à l'agrégation de KPIs.*
@@ -56,6 +53,18 @@ Ce projet implémente une **Architecture Medallion** pour traiter des données f
 - **Réalisations :** Ingestion ADLS Gen2, Analyse SQL Serverless via `OPENROWSET`, Traitement distribué via Spark Pool.
 - **Stack :** Azure Synapse Analytics, T-SQL, PySpark.
 - **Lien :** [Voir le code source](./Azure-Synapse-Analysis)
+
+### 4. Building a Retail Data Pipeline (Walmart Data)
+*Pipeline ETL modulaire : Consolidation de données hétérogènes pour le retail.*
+
+Ce projet illustre l'extraction, la transformation et le chargement de données de ventes massives. Il met en évidence les bonnes pratiques de nettoyage de données et d'optimisation de code en Python.
+
+- **Réalisations :**
+  - **Extract :** Fusion de sources de données hétérogènes (fichiers CSV simulant du SQL et fichiers optimisés Parquet) via un index commun.
+  - **Transform :** Nettoyage avancé avec Pandas, incluant l'imputation statistique par la moyenne pour éviter la perte d'informations, et le feature engineering sur les séries temporelles.
+  - **Load :** Agrégation des ventes par mois via method chaining et sauvegarde optimisée avec un script de validation robuste (Fail-Fast).
+- **Stack :** Python, Pandas, CSV, Parquet.
+- **Lien :** [Voir le code source](./Building-Retail-Data-Pipeline)
 
 ## 🏆 Certifications
 
