@@ -10,14 +10,15 @@ Ce dépôt centralise mes projets d'apprentissage, mes POCs (Proof of Concepts) 
 
 Mon focus se porte sur la "Modern Data Stack" et l'écosystème Cloud :
 
-| Domaine | Technologies & Outils |
+| Domaine | Technologies & Concepts clés |
 | :--- | :--- |
-| **Langages** | 🐍 Python, 🗃️ SQL |
-| **Processing** | 🐼 Pandas, 🏹 PyArrow, ⚡ Apache Spark (PySpark) |
-| **Formats** | 📄 CSV (Bronze), 📦 Parquet (Silver/Gold) |
-| **Cloud & Infra** | ☁️ Microsoft Azure, 🐋 Docker (Conteneurisation) |
-| **BI & Analytics** | 📊 Metabase, 📈 Power BI |
-| **Architecture** | 🏅 Medallion Architecture, 🏗️ Git |
+| **Langages & Requêtage** | Python, SQL (T-SQL) |
+| **Processing & Calcul** | Pandas, Apache Spark (PySpark), PyArrow |
+| **Cloud & Data Platforms** | Microsoft Azure (Synapse Analytics, ADLS Gen2) |
+| **Stockage & Formats** | Parquet (Silver/Gold), CSV (Bronze), SQLite |
+| **DevOps & Déploiement** | Docker, Git / GitHub |
+| **BI & Analytics** | Power BI, Metabase |
+| **Architecture Data** | Medallion Architecture, Pipelines ETL / ELT |
 
 ## 📂 Projets Réalisés
 
