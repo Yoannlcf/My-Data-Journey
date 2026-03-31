@@ -72,7 +72,7 @@ Ce projet illustre l'extraction, la transformation et le chargement de données 
 | Certification | Statut | Date |
 | :--- | :--- | :--- |
 | **Microsoft Certified: Azure Data Fundamentals (DP-900)** | ✅ Obtenue | 8 Janvier 2026 |
-| **Azure Data Engineer Associate (DP-203)** | 🎯 Cible | - |
+| **DataCamp Certified: Data Engineer (DE0019384303575)** | ✅ Obtenue | 31 Mars 2026 |
 
 ---
 *Ce portfolio est maintenu par Yoann LEHONG CHEFFSON. N'hésitez pas à explorer le code pour voir ma logique d'ingénierie !*
