@@ -2,7 +2,7 @@
 
 Portfolio data de **Yoann Lehong Cheffson**, élève ingénieur à l'**Efrei Paris** (cycle ingénieur, majeure visée : Big Data & Machine Learning).
 
-**Je recherche une alternance en data engineering à partir de septembre 2027**, en Île-de-France. Je reste ouvert aux autres postes data (BI, analytics engineering, data science).
+**Je recherche une alternance de 24 mois en data engineering à partir de septembre 2027**, en Île-de-France. Je reste ouvert aux autres postes data (BI, analytics engineering, data science).
 
 - LinkedIn : [yoann-lehong-cheffson](https://www.linkedin.com/in/yoann-lehong-cheffson/)
 
